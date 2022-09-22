@@ -1,0 +1,453 @@
+html { box-sizing: border-box; font-size: 16px; }
+*, *:before, *:after { box-sizing: inherit; }
+body, h1, h2, h3, h4, h5, h6, p, ol, ul { margin: 0; padding: 0; font-weight: normal; }
+ol, ul { list-style: none; }
+img { max-width: 100%; height: auto; }
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(font/GothamPro.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url(font/GothamPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url(font/MonumentExtended-Regular.otf);
+}
+
+h1 {
+    font-family: 'Monument Extended', sans-serif;
+}
+
+.max-container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.content-container {
+    max-width: 785px;
+}
+
+.section1 {
+    margin-top: 31px;
+}
+.section2 {
+    margin-top: 67px;
+    margin-left: 135px;
+}
+
+.section3 {
+    margin-top: 200px;
+    margin-left: 135px;
+}
+
+.section4 {
+    margin-left: 135px;
+    margin-top: 200px;
+    margin-bottom: 320px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 270px); 
+    max-width: 1785px;
+}
+
+.top-bar-menu-center {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #000000;
+}
+
+.menu-item {
+    padding-left: 45px;
+
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #000000;
+}
+
+.logo-image {
+    height: 12px;
+    width: 118px;
+}
+
+.border-after-image {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 35px;
+    border: 1px solid #B4B4B4;
+}
+
+.icon-search {
+    padding-right: 30px;
+}
+
+.icon-basket {
+    padding-right: 25px;
+}
+
+.ddl-menu {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container-center {
+    display: flex;
+}
+
+.header-title {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 78px;
+
+    /* Color / Darl-100% */
+
+    color: #000000;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 55px;
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-center {
+    display: flex;
+    margin-top: 127px;
+}
+
+.button-more-info {
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    display: flex;
+    text-transform: uppercase;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    width: 259px;
+    height: 70px;
+    color: rgba(59, 62, 66, 0.85);
+    /* Button / Grey */
+    /* justify-items: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: #E9E9E9;
+    border-radius: 40px;
+}
+
+.button-order {
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 259px;
+    height: 65px;
+    gap: 10px;
+    color: white;
+    text-transform: uppercase;
+    /* Button / Dark-Grey */
+    margin-right: 20px;
+
+    background: rgba(59, 62, 66, 0.85);
+    border-radius: 40px;
+}
+
+.button-order-2 {
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 259px;
+    height: 70px;
+    gap: 10px;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 23px;
+    
+    /* Button / Dark-Grey */
+
+    background: rgba(59, 62, 66, 0.85);
+    border-radius: 40px;
+}
+
+.button-inventory {
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 398px;
+    height: 65px;
+    color: #585B5E;
+    text-transform: uppercase;
+
+    /* Button / Grey */
+
+    background: #E9E9E9;
+    border-radius: 40px;
+}
+
+ul {
+    list-style-type: disc;
+
+}
+
+.image-center {
+    width: 1000px;
+    height: 933px;
+    background-image: url(images/image-header.png);
+}
+
+.image-bottom {
+    width: 1000px;
+    height: 1000px;
+    background-image: url(images/image\ 3.png); 
+}
+
+.footer-image {
+    width: 1000px;
+    height: 1000px;
+    background-image: url(images/image\ 2.png);
+}
+
+.container-description {
+    padding-top: 59px;
+    padding-left: 67px;
+    margin-top: 158px;
+    width: 783px;
+    height: 450px;
+    /* Cards / Lite-Grey */
+
+    background: #F8F8F8;
+}
+
+.description {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.text-description {
+    padding-top: 24px;
+    padding-right: 318px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    color: #000000;
+}
+
+.container-about {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.container-footer {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.about-title {
+    font-family: 'Monument Extended';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 78px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.about-text {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 106px;
+    padding-top: 24px;
+    /* or 133% */
+
+    color: #000000;
+}
+
+.about-content {
+    padding-left: 111px;
+}
+
+.item-text-1, .item-text-2 {
+    display: flex;
+    align-items: center;
+}
+
+.item-text-3 {
+    display: flex;
+    margin-top: 65px;
+}
+
+.item-text-1 {
+    margin-top: 61px;
+}
+
+.icon-1 {
+    width: 84px;
+    height: 84px;
+    background-image: url(images/Group.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-2 {
+    width: 84px;
+    height: 84px;
+    background-image: url(images/material-symbols_weight-outline.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-3 {
+    width: 84px;
+    height: 84px;
+    background-image: url(images/fluent_top-speed-20-filled.svg);
+    background-repeat: no-repeat;
+}
+
+.container-image {
+    margin-right: 135px;
+}
+
+.button-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Gotham Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    /* identical to box height */
+    margin-top: 70px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    width: 397px;
+    height: 70px;
+
+    /* Button / Dark-Grey */
+
+    background: rgba(59, 62, 66, 0.85);
+    border-radius: 40px;
+}
+
+.item-text-1 {
+    margin-bottom: 70px;
+}
+
+.item-text-2 {
+    margin-bottom: 45px;
+}
+
+.text-font {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    margin-left: 28px;
+    margin-right: 95px;
+
+    color: #000000;
+}
+
+.list-text {
+    padding-top: 25px;
+    padding-left: 20px;
+}
